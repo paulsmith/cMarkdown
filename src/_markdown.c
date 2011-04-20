@@ -24,7 +24,7 @@ markdown_render(PyObject *self, PyObject *args)
 
     ups_xhtml_renderer(&renderer, 0);
 
-    ups_markdown(ob, ib, &renderer, 0);
+    ups_markdown(ob, ib, &renderer, 0xFF);
 
     result = Py_BuildValue("s", ob->data);
 
@@ -40,7 +40,7 @@ static PyMethodDef MarkdownMethods[] = {
 };
 
 PyMODINIT_FUNC
-initmarkdown(void)
+initcMarkdown(void)
 {
-    (void)Py_InitModule("markdown", MarkdownMethods);
+    (void)Py_InitModule("cMarkdown", MarkdownMethods);
 }
