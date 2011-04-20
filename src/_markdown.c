@@ -74,9 +74,9 @@ markdown_render(PyObject *self, PyObject *args, PyObject *kwds)
         extensions |= MKDEXT_LAX_HTML_BLOCKS;
 
     ib = bufnew(size);
-    bufgrow(ib, size+1);
+    bufgrow(ib, size);
     ib->data = (char *)s;
-    ib->size = size+1;
+    ib->size = size;
 
     ob = bufnew(128);
     bufgrow(ob, size * 1.2);
@@ -85,7 +85,7 @@ markdown_render(PyObject *self, PyObject *args, PyObject *kwds)
 
     ups_markdown(ob, ib, &renderer, extensions);
 
-    result = Py_BuildValue("s", ob->data);
+    result = Py_BuildValue("s#", ob->data, ob->size);
 
     ups_free_renderer(&renderer);
     bufrelease(ob);
