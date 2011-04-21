@@ -1,0 +1,7 @@
+  ~ cMarkdown - Markdown for Python, accelerated by C. ~
+
+Usage:
+
+    >>> import cMarkdown as markdown
+    >>> markdown.markdown('# Hello, world!')
+    '<h1>Hello, world!</h1>\n'
