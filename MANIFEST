@@ -1,8 +1,0 @@
-README
-setup.py
-bin/markdown
-src/_markdown.c
-src/array.c
-src/buffer.c
-src/markdown.c
-src/xhtml.c

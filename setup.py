@@ -2,7 +2,7 @@ from distutils.core import setup, Extension
 
 setup(
     name='cMarkdown',
-    version='0.1',
+    version='0.1.1',
     description='Markdown for Python, accelerated by C.',
     author='Paul Smith',
     author_email='paulsmith@pobox.com',
@@ -14,7 +14,7 @@ setup(
     url='https://github.com/paulsmith/cMarkdown',
     download_url='https://github.com/paulsmith/cMarkdown/archives/master',
     classifiers=[
-        'Development Status :: 3 - Alpha'
+        'Development Status :: 3 - Alpha',
         'License :: OSI Approved :: BSD License',
         'Operating System :: OS Independent',
         'Programming Language :: Python',
