@@ -3,6 +3,11 @@ cMarkdown
 
 [Markdown][1] for Python, accelerated by C.
 
+Installation
+------------
+
+    $ pip install cMarkdown
+
 Usage
 -----
 
@@ -31,9 +36,11 @@ These keyword arguments to `markdown()`, which default to `False`, enable
 various extensions to the Markdown language.
 
  * `tables=True`: Enables a tabular format that renders to `<table>` in HTML.
- * `fenced_code=True`: Enables the use of three <code>```</code> to delimit the beginning and end of a literal code block.
+ * `fenced_code=True`: Enables the use of three <code>```</code> to delimit
+   the beginning and end of a literal code block.
  * `autolink=True`: Enables the conversion of bare URLs to links in HTML.
- * `strikethrough=True`: Enables the use of two <code>~~</code> before and after text to wrap it in the `<del>` tag in HTML.
+ * `strikethrough=True`: Enables the use of two <code>~~</code> before
+   and after text to wrap it in the `<del>` tag in HTML.
 
 Credits
 -------
